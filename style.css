@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    list-style: none;
+}
+
+main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto; 
+}
+
+footer {
+    text-align: center; 
+    padding: 20px;
+}
+
+header {
+    background-color: rgb(0, 80, 117);
+    width: 100%;
+    text-align: center;
+}
+
+fieldset {
+    border-style: none;
+    padding: 10px 20px; 
+
+}
+
+h1 {
+    margin: 0 0 15px 0;
+    padding: 30px 0; 
+    font-size: 45px;
+    color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);  
+}
+
+h2 {
+    font-weight: 500;
+    color: darkslategrey;
+    font-size: 35px; 
+}
+
+legend { 
+    font-size: 32px;
+    color: darkslategray;
+    font-weight: bold;
+    margin: 10px 0;
+}
+label {
+    color: #636363;
+}
+span,
+.subtitle {
+    color: grey;
+    font-weight: 200;
+    font-style: italic;   
+}
+
+p {
+    color: darkslategrey; 
+    font-weight: 300;
+}
+
+.intro {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.hr1 {
+    border-top: 5px solid darkslategray;
+    border-bottom: 2px solid darkslategray;
+    padding: 3px 0; 
+    margin-bottom: 30px;
+}
+.hr2 {
+    border: 2px solid darkslategray;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+.info-sect {
+    padding: 0;
+}
+.info-select li input,
+.info-select li select {
+    margin-top: 0.3em;
+    padding: 0.4em;
+    text-align: left;
+    width: 100%;
+    display: block;
+}
+
+.info-select li input,
+.info-select li select {
+    margin-bottom: 0.8em;
+}
+
+.info-select li:last-child {
+    margin-bottom: 0.5em;
+}
+#zip {
+    width:45%;
+}
+
+.select-box {
+    padding-left: 0;
+}
+
+.select-box li {
+    margin: 0.3em;
+}
+
+.select-box li input,
+.select-box li select {
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+select {
+    color: #888888;
+}
+
+textarea {    
+    display: block;
+    width: 100%;
+    height: 6em;
+    padding: 0.4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 95%;
+    font-weight: 300;
+    resize: none;
+}
+
+input[type="submit"] {    
+    display: block;
+    width: 100%;
+    padding: 0.8em
+}
+.info-sect input:focus,
+.info-sect select:focus,
+textarea:focus {
+    background-color: #eee;
+    border-bottom: 2px solid darkslategray;
+    outline: none;
+}
+input[type="submit"]:focus {
+    outline: 3px solid darkslategray;
+    outline-offset: 3px;
+    background-color: darkslategray;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+    outline: 2px solid darkslategray;
+}
+input,
+select,
+textarea {
+    background-color: #e8e8e8;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 20px;  
+}
+
+.info-sect input {
+    width:100%
+}
+
+
+submit:focus {
+    border: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: rgb(0, 80, 117);
+    color: white;
+    margin-bottom: 0.5em;
+}
+input::placeholder {
+    font-style: italic;
+    text-align: end;
+    font-size: 0.8em;
+    padding-right: 15px;
+    opacity: 0.5;
+}
+input[type="tel"]::placeholder {
+    text-align: left;
+}
+
+.info-sect label {
+display: block; 
+margin: 15px 0;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 20px;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .info-sect li {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        
+    }
+    .info-sect label {
+        padding: 1em;
+        justify-self: flex-start;
+        flex: 25%    
+    }
+       
+    .info-sect input,
+    .info-sect select {
+        flex: 90%;
+        margin-bottom: 14px;
+    }   
+    #zip { 
+        max-width: 15%;
+        margin-right: 62.9%
+    }  
+}
